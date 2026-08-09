@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hordelane — Request deletion of your data</title>
+<style>
+  :root { color-scheme: light dark; --ink:#e8e9e0; --bg:#16180f; --panel:#22251e;
+          --edge:#33372c; --muted:#9aa08c; --accent:#8fc74a; }
+  @media (prefers-color-scheme: light) {
+    :root { --ink:#24261f; --bg:#f6f5f1; --panel:#fff; --edge:#e3e1d8;
+            --muted:#6f7264; --accent:#40691c; }
+  }
+  body { margin:0; padding:3rem 1.5rem 5rem; background:var(--bg); color:var(--ink);
+         font:16px/1.65 -apple-system,"Segoe UI",Roboto,sans-serif;
+         display:flex; justify-content:center; }
+  main { max-width:44rem; width:100%; }
+  h1 { font-size:1.9rem; margin:0 0 .3rem; letter-spacing:-.01em; }
+  .sub { color:var(--muted); margin:0 0 2.5rem; }
+  h2 { font-size:1.15rem; margin:2.5rem 0 .75rem; }
+  ol { padding-inline-start:1.25rem; }
+  ol li { margin-bottom:.9rem; }
+  code { background:var(--panel); border:1px solid var(--edge); border-radius:5px;
+         padding:.1rem .4rem; font-size:.9em; }
+  a { color:var(--accent); }
+  table { border-collapse:collapse; width:100%; margin:.5rem 0 0;
+          display:block; overflow-x:auto; }
+  th, td { text-align:start; padding:.6rem .8rem; border-bottom:1px solid var(--edge);
+           vertical-align:top; }
+  th { font-weight:600; white-space:nowrap; }
+  .note { background:var(--panel); border:1px solid var(--edge); border-radius:10px;
+          padding:1rem 1.25rem; margin:1.5rem 0; }
+  footer { margin-top:3rem; color:var(--muted); font-size:.875rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Delete your Hordelane data</h1>
+<p class="sub">Hordelane: Zombie Survival — published by Roy Greenberg</p>
+
+<p>
+  Hordelane has no accounts and no sign-in. Nothing it records identifies you: there is no
+  name, no email address, no contact details and no advertising identifier. What it does
+  record is anonymous gameplay information — which stage was played, how it ended, how long
+  it took — tagged with a random <strong>DATA ID</strong> so that a deletion request can be
+  matched to the right records.
+</p>
+
+<h2>How to request deletion</h2>
+<ol>
+  <li>Open <strong>Hordelane</strong> on your device.</li>
+  <li>Tap the <strong>AUDIO / settings</strong> button in the lobby.</li>
+  <li>Find the line reading <strong>DATA ID</strong>, followed by a random 12-character
+      code such as <code>A5514E11EEA5</code>. <strong>Tap it</strong> — the code is copied
+      to your clipboard and the screen confirms it. The code is yours alone and appears
+      nowhere else.</li>
+  <li>Paste it into an email to
+      <a href="mailto:playrg.games@gmail.com">playrg.games@gmail.com</a> with the subject
+      <strong>Delete my data</strong>.</li>
+</ol>
+<p>
+  Nothing else is needed. You do not have to explain why, and there is nothing to prove —
+  the DATA ID is the only thing that connects the records to your copy of the game.
+</p>
+
+<div class="note">
+  <strong>Prefer to stop collection instead of deleting?</strong> The same settings screen
+  has a <strong>GAME DATA: ON / OFF</strong> button. Switching it off stops the game
+  sending anything at all, immediately, and it stays off. You can do both: switch it off
+  and still ask for what was already recorded to be deleted.
+</div>
+
+<h2>What is deleted, and when</h2>
+<table>
+  <tr><th>Data</th><th>What happens</th></tr>
+  <tr>
+    <td>Gameplay event records tied to your DATA ID<br>
+        <span style="color:var(--muted)">stage numbers, results, duration, upgrades bought</span></td>
+    <td><strong>Deleted.</strong> Removed from the analytics reporting console and from the
+        exported analytics tables, within 30 days of the request.</td>
+  </tr>
+  <tr>
+    <td>Your DATA ID itself</td>
+    <td><strong>Deleted</strong> along with the records it tags. A new random one is
+        generated if you later reinstall.</td>
+  </tr>
+  <tr>
+    <td>Your game progress<br>
+        <span style="color:var(--muted)">coins, stages cleared, upgrades, survivors</span></td>
+    <td><strong>Never sent anywhere.</strong> It is stored only on your device. Uninstalling
+        the game, or clearing its storage in Android settings, removes it. There is no copy
+        for anyone to delete.</td>
+  </tr>
+  <tr>
+    <td>Aggregate counts<br>
+        <span style="color:var(--muted)">e.g. "how many players finished stage 12"</span></td>
+    <td><strong>Retained.</strong> These are totals that were never linked to any DATA ID
+        and cannot be traced back to a person.</td>
+  </tr>
+</table>
+
+<h2>How long it takes</h2>
+<p>
+  Requests are handled by one person, so allow a few days for a reply. Deletion is completed
+  within <strong>30 days</strong> of the request. You will get an email confirming it is
+  done. Records are kept only for as long as they are useful for improving the game, and are
+  deleted on request in any case.
+</p>
+
+<h2>Related</h2>
+<p>
+  <a href="privacy-policy.html">Privacy Policy</a> ·
+  <a href="terms-of-service.html">Terms of Service</a> ·
+  <a href="index.html">All documents</a>
+</p>
+
+<footer>
+  Last updated: 9 August 2026 · Contact: playrg.games@gmail.com
+</footer>
+
+</main>
+</body>
+</html>
