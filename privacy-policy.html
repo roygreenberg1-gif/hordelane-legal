@@ -25,7 +25,7 @@
 <body>
 
 <h1>Privacy Policy for Hordelane</h1>
-<p class="meta">Last updated: 1 September 2026</p>
+<p class="meta">Last updated: 3 September 2026</p>
 
 <p>
   Hordelane: Zombie Survival ("Hordelane", "the game") is developed and published by Roy Greenberg. This policy
@@ -62,6 +62,11 @@
     <td>To check whether upgrade prices and rewards are balanced</td>
   </tr>
   <tr>
+    <td>Purchase record</td>
+    <td>The small coin pack was bought at level 12</td>
+    <td>To judge pricing and pacing. Which product, and when — never the payment itself</td>
+  </tr>
+  <tr>
     <td>App instance identifier</td>
     <td>A random ID generated on install</td>
     <td>To count players rather than events, and to measure whether people return</td>
@@ -77,8 +82,8 @@
     <td>To reproduce bugs and to know which devices to test on</td>
   </tr>
   <tr>
-    <td>Approximate region</td>
-    <td>Country level, derived from your IP address; the IP is not stored</td>
+    <td>Approximate location</td>
+    <td>Country and city level, derived by Google Analytics from your IP address; the IP address itself is masked and not stored</td>
     <td>To understand where players are, for language and release planning</td>
   </tr>
 </table>
@@ -139,7 +144,8 @@
 <p>
   Players who installed the game before this question existed were not shown it. Their
   data continued to be collected under the opt-out described below, which is what the
-  earlier version of this policy set out, and they were told so directly.
+  earlier version of this policy set out, and they are told so directly, in the channel
+  the closed test already uses, rather than by the prompt.
 </p>
 
 <h2>How to change your mind, in either direction</h2>
@@ -153,16 +159,16 @@
 
 <h2>Purchases</h2>
 <p>
-  When in-app purchases are available, <strong>payments are handled entirely by Google
-  Play</strong>. The developer never receives, sees, or stores your card number, billing
-  address, or any other payment detail. Google tells the game only whether a purchase
-  succeeded.
+  <strong>Payments are handled entirely by Google Play.</strong> The developer never
+  receives, sees, or stores your card number, billing address, or any other payment
+  detail. When a purchase succeeds, Google Play hands the game a signed receipt naming the
+  product and an order number; the game checks the signature and then delivers the item.
 </p>
 <p>
-  The game records that a purchase happened — which pack, its price tier, and when — as an
-  anonymous analytics event, so that pricing and pacing can be judged. That record carries
-  the same random DATA ID as everything else and contains no payment information and no
-  name.
+  The game records that a purchase happened — which product, and so its price tier, and
+  when — as an anonymous analytics event, so that pricing and pacing can be judged. That
+  record carries the same random DATA ID as everything else and contains no payment
+  information, no order number, and no name.
 </p>
 <p>
   Refunds are handled by Google Play. The
@@ -184,6 +190,17 @@
   <a href="https://policies.google.com/privacy">Google’s privacy policy</a> and the terms
   you already have with Google. The developer receives only what the game needs to restore
   a save.
+</p>
+<p>
+  Purchases go through <strong>Unity's In-App Purchasing service</strong>, the component
+  the game uses to talk to Google Play. When you buy something, Unity Technologies receives
+  the purchase record — the product, the Google Play receipt and its signature, the order
+  number, the device platform, and a session identifier for the game's Unity project — and
+  uses it to confirm the purchase and to report purchase statistics to the developer. That
+  processing is described in
+  <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity's privacy
+  policy for players of Unity-made games</a>. Unity does not receive your card number or
+  billing address either; those never leave Google Play.
 </p>
 <p>
   The data is <strong>not sold, rented, or shared</strong> with advertisers, data brokers,
@@ -231,8 +248,8 @@
 <p>
   To have your data deleted, email the address below and include your DATA ID. Records
   carrying that tag will be deleted. Please send the request before uninstalling: the tag
-  is stored only on your device, and once the game is removed it cannot be recovered by
-  you or by the developer.
+  is stored only on your device — it is deliberately left out of the Play Games backup —
+  and once the game is removed it cannot be recovered by you or by the developer.
 </p>
 <p>
   To stop collection without deleting anything, switch <strong>GAME DATA</strong> to OFF
@@ -249,9 +266,11 @@
 <p>
   Under the California Consumer Privacy Act, the categories of personal information
   collected are <strong>identifiers</strong> (the random app instance identifier and the
-  DATA ID) and <strong>internet or other electronic network activity</strong> (the
-  gameplay events listed above). They are collected directly from the app on your device,
-  for the business purpose of analysing and improving the game.
+  DATA ID), <strong>internet or other electronic network activity</strong> (the
+  gameplay events listed above), and <strong>commercial information</strong> (which
+  in-app products were bought, without any payment detail). They are collected directly
+  from the app on your device, for the business purpose of analysing and improving the
+  game.
 </p>
 <p>
   <strong>Your personal information is not sold, and it is not shared for cross-context
@@ -305,10 +324,10 @@
 
 <h2>Changes to this policy</h2>
 <p>
-  Advertising and in-app purchases are planned for a later release, and both involve
-  additional data collection. This policy and the Data Safety declaration on Google Play
-  will both be updated before any such version is published. The date at the top of this
-  page shows when it was last revised.
+  Advertising is planned for a later release and involves additional data collection. This
+  policy and the Data Safety declaration on Google Play will both be updated before any
+  such version is published. The date at the top of this page shows when it was last
+  revised.
 </p>
 
 <h2>Contact</h2>
