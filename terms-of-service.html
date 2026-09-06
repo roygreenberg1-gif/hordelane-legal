@@ -17,6 +17,11 @@
   .meta { color: #6b6b6b; font-size: .9rem; margin-top: 0; }
   ul { padding-left: 1.25rem; }
   code { font-size: .9em; }
+  /* Last, and deliberately so - see the same note in privacy-policy.html. The dark
+     block above sets only `body`, leaving .meta at 3.5:1 on #121212. */
+  @media (prefers-color-scheme: dark) {
+    .meta { color: #949494; }
+  }
 </style>
 </head>
 <body>
@@ -99,8 +104,8 @@
   </li>
   <li>
     <strong>Without that sign-in, there is no backup of your save.</strong> If you
-    uninstall the game, clear its data, lose or replace your device, or reset your progress
-    in-game, the local save is gone — including coins, hearts and piggy banks you paid
+    uninstall the game, clear its data, or lose or replace your device, the local save is
+    gone — including coins, hearts and piggy banks you paid
     for. The backup lives in your Google account, not with us: we hold no copy of your save
     and cannot restore one for you. If you have bought anything, sign in.
   </li>

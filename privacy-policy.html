@@ -20,6 +20,14 @@
   table { border-collapse: collapse; width: 100%; margin-top: .5rem; }
   th, td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid #8883; vertical-align: top; }
   th { font-size: .85rem; text-transform: uppercase; letter-spacing: .03em; color: #6b6b6b; }
+  /* Last, and deliberately so. The dark block above sets only `body`, so .meta and th
+     kept their light-mode grey against #121212 - 3.5:1, under AA for text this size,
+     and `th` is the header row of the table naming every data type collected. These
+     selectors carry no more specificity than the ones above, so the override only wins
+     by coming after them; moving this block up silently undoes it. */
+  @media (prefers-color-scheme: dark) {
+    .meta, th { color: #949494; }
+  }
 </style>
 </head>
 <body>
@@ -136,11 +144,16 @@
   its data.
 </p>
 
-<h2>You are asked how much to share, before anything is sent</h2>
+<h2>You are asked how much to share, before anything can be traced to you</h2>
 <p>
   The first time you reach the safe house, the game asks how it may measure your play,
-  and lists what that covers. Nothing is sent before you answer, and the question cannot
-  be closed without answering it. There are two answers:
+  and lists what that covers. <strong>Nothing that can be traced to you is sent before you
+  answer.</strong> Until the question is settled, Google Analytics is told that storage is
+  denied, so the few events the Firebase component sends on its own when the app starts —
+  that it was opened, and that a session began — carry no app instance identifier and no
+  DATA ID, and cannot be linked to you or to one another. The gameplay statistics described
+  above are held back entirely until you have answered. The question cannot be closed
+  without answering it. There are two answers:
 </p>
 <ul>
   <li><strong>YES, CONTINUE.</strong> The statistics above are sent together with the app
