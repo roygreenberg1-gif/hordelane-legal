@@ -33,12 +33,16 @@
 <body>
 
 <h1>Privacy Policy for Hordelane</h1>
-<p class="meta">Last updated: 30 September 2026</p>
+<p class="meta">Last updated: 3 October 2026</p>
 
 <p>
   Hordelane: Zombie Survival ("Hordelane", "the game") is developed and published by Roy Greenberg. This policy
   explains what information the game collects, why, and how to switch it off. It applies
-  to the Android application with the package name <code>com.greenberg.hordelane</code>.
+  to the Android application with the package name <code>com.greenberg.hordelane</code>,
+  and to the iPhone application with the bundle identifier
+  <code>com.greenberg.hordelane</code> on the App Store. The two are the same game, but the
+  iPhone version leaves some parts out: <em>On iPhone</em> below says exactly where they
+  differ. Everything else on this page applies to both.
 </p>
 
 <h2>The short version</h2>
@@ -66,6 +70,72 @@
   fully playable without it.
 </p>
 
+<h2>On iPhone</h2>
+<p>
+  The iPhone version differs from the Android one in these ways, and only these:
+</p>
+<ul>
+  <li><strong>Saying no means nothing is sent.</strong> The question's two answers on
+      iPhone are <strong>YES, CONTINUE</strong> and <strong>NO, THANKS</strong>. With YES,
+      the statistics are sent exactly as described below for that answer. With NO, the
+      analytics component is never started: no gameplay statistics, no app instance
+      identifier, no DATA ID, no device information and no app-open events are sent at
+      all. Nothing is sent before you answer either, because on iPhone the analytics
+      component does not start until you say yes. In Settings the two modes read
+      <strong>GAME DATA FULL</strong> and <strong>GAME DATA OFF</strong>, and CHANGE
+      switches between them; switching to OFF stops the analytics at once, and it stays
+      off when the game is opened again.</li>
+  <li><strong>No advertising.</strong> The iPhone version contains no ad service and
+      shows no advertisements, so the <em>Rewarded videos</em> section does not apply to
+      it. The game does not track you across other companies' apps or websites, never asks
+      for App Tracking Transparency permission, and its analytics is built without the
+      component that could read the advertising identifier.</li>
+  <li><strong>No account and no cloud backup.</strong> There is no Google Play Games
+      sign-in on iPhone, so <em>Backing up your progress</em> does not apply: your
+      progress is stored on the iPhone. If you use your iPhone's own backup (iCloud Backup,
+      or a backup to a computer), that backup may include the game's saved data, as it
+      does for most apps; that copy is in your Apple account or on your computer, and the
+      developer cannot read it.</li>
+  <li><strong>Purchases go through Apple.</strong> Payments are handled entirely by the
+      App Store, under Apple's terms; the developer never receives, sees, or stores your
+      card number, billing address, or any other payment detail. Survivors, weapons and
+      other items you own permanently can be brought back on a new install or another
+      iPhone with <strong>RESTORE PURCHASES</strong> in Settings; HORDE PASS PREMIUM, a
+      purchase for one season that does not renew, comes back the same way for the season it
+      was bought in. A purchase that waits for a parent's approval (Ask to Buy) is delivered
+      once Apple completes it; while it waits, the game only remembers, until it is closed,
+      that it is waiting. Refunds are handled by
+      Apple, at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
+      The purchase component the game uses (Unity's In-App Purchasing) talks only to the
+      App Store on iPhone: the iPhone version is built with its purchase report to Unity
+      switched off, so Unity receives no purchase record and no device information from
+      it.</li>
+  <li><strong>Nothing to the game engine's maker.</strong> The iPhone version is built with
+      Unity's own analytics, performance reporting and crash reporting switched off, so the
+      app sends nothing to Unity Technologies.</li>
+  <li><strong>The time, from Apple.</strong> To keep timed rewards fair, the iPhone
+      version asks Apple's web server (www.apple.com) for the current time each time the
+      game starts, the way a browser loads a page. The request carries nothing about you or
+      your play, and the answer is used only on the iPhone. Apple receives your IP address,
+      as with any web request, under Apple's own privacy policy. This happens whichever way
+      you answered the statistics question, because it is not a statistic: nothing about you
+      is collected by it.</li>
+  <li><strong>Age range, where the law requires it.</strong> Some places require apps to
+      check a user's age through the app store; Texas does for new accounts. Where Apple
+      reports that such a law applies, the game asks Apple, through Apple's age-range
+      feature, which age range the account belongs to. Apple decides whether to ask you or a
+      parent and what it shares. The answer is used only on the iPhone, only while the game
+      is running, and only to apply age rules. It is never stored, never sent to the
+      developer, and never used for anything else. Purchases by minors go through Apple's
+      own parental approval. If Apple reports that a player is under 13, the game sends no
+      statistics for that player, whatever was answered on the consent card.</li>
+  <li><strong>No permissions.</strong> The iPhone version asks for no permissions: no
+      tracking, location, camera, microphone, contacts, photos, or notifications.</li>
+  <li><strong>Device information</strong> sent with the statistics, when you have said
+      yes, names the iPhone model and the iOS version where the table below says Android
+      version.</li>
+</ul>
+
 <h2>What the game collects</h2>
 <table>
   <tr><th>Data</th><th>Example</th><th>Why</th></tr>
@@ -81,8 +151,8 @@
   </tr>
   <tr>
     <td>Purchase record</td>
-    <td>The small coin pack was bought at level 12</td>
-    <td>To judge pricing and pacing. Which product, and when — never the payment itself</td>
+    <td>The small coin pack was bought at level 12; a purchase of it was cancelled</td>
+    <td>To judge pricing and pacing, and to find purchases that fail. Which product, when, and whether it went through — never the payment itself</td>
   </tr>
   <tr>
     <td>App instance identifier</td>
@@ -96,7 +166,7 @@
   </tr>
   <tr>
     <td>Device and app information</td>
-    <td>Device model, Android version, app version, language</td>
+    <td>Device model, Android or iOS version, app version, language</td>
     <td>To reproduce bugs and to know which devices to test on</td>
   </tr>
   <tr>
@@ -105,7 +175,7 @@
     <td>To understand where players are, for language and release planning</td>
   </tr>
   <tr>
-    <td>Advertising data, when you ask for a video</td>
+    <td>Advertising data, when you ask for a video (Android only)</td>
     <td>Your advertising ID and app set ID, your IP address, that a video was requested,
         played or tapped, and how the app performed while it played</td>
     <td>Collected by Google's ad service, not by the developer, to serve, count and limit
@@ -124,10 +194,11 @@
   <li>No precise or GPS location.</li>
   <li>No contacts, photos, files, microphone, or camera access.</li>
   <li>No text you type. The game has no chat and no user-generated content.</li>
-  <li>The game requests no Android runtime permissions.</li>
+  <li>The game requests no Android runtime permissions, and asks for no permissions on
+      iPhone.</li>
 </ul>
 
-<h2>Backing up your progress</h2>
+<h2>Backing up your progress (Android)</h2>
 <p>
   The game can back your progress up to <strong>Google Play Games</strong> so that a new
   phone, or a reinstall, does not cost you your campaign. <strong>This is optional.</strong>
@@ -170,7 +241,8 @@
   that it was opened, and that a session began — carry no app instance identifier and no
   DATA ID, and cannot be linked to you or to one another. The gameplay statistics described
   above are held back entirely until you have answered. The question cannot be closed
-  without answering it. There are two answers:
+  without answering it. There are two answers on Android (on iPhone, see <em>On
+  iPhone</em> above):
 </p>
 <ul>
   <li><strong>YES, CONTINUE.</strong> The statistics above are sent together with the app
@@ -205,23 +277,26 @@
 
 <h2>Purchases</h2>
 <p>
-  <strong>Payments are handled entirely by Google Play.</strong> The developer never
+  <strong>On Android, payments are handled entirely by Google Play</strong> (on iPhone,
+  by the App Store - see <em>On iPhone</em> above). The developer never
   receives, sees, or stores your card number, billing address, or any other payment
   detail. When a purchase succeeds, Google Play hands the game a signed receipt naming the
   product and an order number; the game checks the signature and then delivers the item.
 </p>
 <p>
   The game records that a purchase happened — which product, and so its price tier, and
-  when — as an anonymous analytics event, so that pricing and pacing can be judged. That
-  record carries the same random DATA ID as everything else and contains no payment
-  information, no order number, and no name.
+  when — and, when a purchase does not go through, which product it was, the level, and the
+  reason it did not (for example: cancelled, no connection, payment declined, or payment
+  still pending), as anonymous analytics events, so that pricing and pacing can be judged and failing purchases
+  can be found. These records carry the same random DATA ID as everything else and contain
+  no payment information, no order number, and no name.
 </p>
 <p>
-  Refunds are handled by Google Play. The
+  Refunds are handled by Google Play on Android and by Apple on iPhone. The
   <a href="terms-of-service.html">Terms of Service</a> explain what a purchase gives you.
 </p>
 
-<h2>Rewarded videos</h2>
+<h2>Rewarded videos (Android only)</h2>
 <p>
   The game shows one kind of advertisement: a <strong>rewarded video</strong>, which
   plays only when you tap WATCH AD — to get back into a run you have just lost, or to
@@ -279,7 +354,8 @@
 </p>
 <p>
   Purchases go through <strong>Unity's In-App Purchasing service</strong>, the component
-  the game uses to talk to Google Play. When you buy something, Unity Technologies receives
+  the game uses to talk to Google Play (on iPhone it is built without this report, and
+  Unity receives nothing - see <em>On iPhone</em> above). When you buy something, Unity Technologies receives
   the purchase record — the product, the Google Play receipt and its signature, the order
   number, the device platform, and a session identifier for the game's Unity project — and
   uses it to confirm the purchase and to report purchase statistics to the developer. That
@@ -350,7 +426,8 @@
 </p>
 <p>
   To stop being identified without deleting anything, switch to <strong>ANONYMOUS
-  ONLY</strong> in Settings; from then on nothing sent carries your DATA ID or any other
+  ONLY</strong> in Settings (<strong>GAME DATA OFF</strong> on iPhone, which stops sending
+  anything at all); from then on nothing sent carries your DATA ID or any other
   identifier. Records sent before the switch keep the tag and can still be deleted by the
   request above, as long as you copy the DATA ID first.
 </p>
@@ -419,12 +496,13 @@
 <p>
   The developer is the data controller. The legal basis for processing gameplay analytics
   that carry an identifier is consent, which you may withdraw at any time by switching to
-  <strong>ANONYMOUS ONLY</strong> in Settings; withdrawing does not affect processing that
+  <strong>ANONYMOUS ONLY</strong> in Settings (<strong>GAME DATA OFF</strong> on iPhone); withdrawing does not affect processing that
   already took place. Anonymous statistics carry no identifier and are processed on the
   basis of the developer's legitimate interest in balancing and improving the game. You may
   also lodge a complaint with your national supervisory authority. Data is processed by
   Google on servers that may be located outside the EEA, under Google's standard
-  contractual clauses. The game is not distributed in the EEA or the UK, and the
+  contractual clauses. The game, on Android and on iPhone, is not distributed in the EEA
+  or the UK, and the
   rewarded videos are requested without a consent dialog for that reason; before any
   release there, a consent request meeting Google's requirements would be shown before
   the first video is fetched.
@@ -432,16 +510,19 @@
 
 <h2>Children</h2>
 <p>
-  Hordelane is not directed at children under 13 and is not listed in Google Play's
-  Families programme. The game does not knowingly collect information from children.
+  Hordelane is not directed at children under 13. It is not listed in Google Play's
+  Families programme or in the App Store's Kids category. The game does not knowingly
+  collect information from children: on iPhone, where Apple's age-range feature reports a
+  player under 13, no statistics are sent for that player.
 </p>
 
 <h2>Changes to this policy</h2>
 <p>
   Rewarded videos were added on 17 September 2026, and this policy, the Data Safety
   declaration on Google Play, the store's ads and advertising-ID answers and the game's
-  own manifest changed together for them. The date at the top of this page shows when it
-  was last revised.
+  own manifest changed together for them. The iPhone version was added on 3 October 2026, and
+  this policy now covers it too. The date at the top of this page shows when it was last
+  revised.
 </p>
 
 <h2>Contact</h2>
