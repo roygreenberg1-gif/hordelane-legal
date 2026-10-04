@@ -33,7 +33,7 @@
 <body>
 
 <h1>Privacy Policy for Hordelane</h1>
-<p class="meta">Last updated: 3 October 2026</p>
+<p class="meta">Last updated: 4 October 2026</p>
 
 <p>
   Hordelane: Zombie Survival ("Hordelane", "the game") is developed and published by Roy Greenberg. This policy
@@ -47,12 +47,13 @@
 
 <h2>The short version</h2>
 <p>
-  The game collects <strong>anonymous gameplay statistics</strong> — which level you
+  The game collects <strong>gameplay statistics</strong> — which level you
   played, whether you won, and what you upgraded — so that the difficulty and pacing can
   be improved. <strong>None of it</strong> carries your name, email, contacts, photos,
   precise location, or anything else that identifies you personally. You choose, the
   first time you play and again at any time in Settings, whether those statistics may
-  carry a random tag that lets us find and delete yours, or whether they are sent as
+  carry a random tag that lets us find and delete yours (statistics sent that way are
+  pseudonymous: tied to random identifiers, never to your name or account), or whether they are sent as
   <strong>anonymous statistics only</strong>, with no identifier at all.
 </p>
 <p>
@@ -127,8 +128,11 @@
       parent and what it shares. The answer is used only on the iPhone, only while the game
       is running, and only to apply age rules. It is never stored, never sent to the
       developer, and never used for anything else. Purchases by minors go through Apple's
-      own parental approval. If Apple reports that a player is under 13, the game sends no
-      statistics for that player, whatever was answered on the consent card.</li>
+      own parental approval. If Apple reports that a player is under 13, the game stops sending
+      statistics for that player as soon as Apple's answer arrives, whatever was answered on the
+      consent card, and asks Google Analytics to discard anything not yet uploaded. Events from
+      the first moments of that session may already have been sent; email us with the DATA ID
+      and they will be deleted.</li>
   <li><strong>No permissions.</strong> The iPhone version asks for no permissions: no
       tracking, location, camera, microphone, contacts, photos, or notifications.</li>
   <li><strong>Device information</strong> sent with the statistics, when you have said
@@ -156,7 +160,7 @@
   </tr>
   <tr>
     <td>App instance identifier</td>
-    <td>A random ID generated on install</td>
+    <td>A random ID generated on install (on iPhone, also Apple's identifier for vendors)</td>
     <td>To count players rather than events, and to measure whether people return</td>
   </tr>
   <tr>
@@ -227,9 +231,15 @@
 <h2>The app instance identifier</h2>
 <p>
   The identifier is generated randomly when you install the game. It is not your device's
-  serial number, not your advertising ID, and is not linked to any account. It cannot be
-  used to identify you, and it changes if you uninstall and reinstall the game or clear
+  serial number, not your advertising ID, and is not linked to any account. On its own it
+  cannot identify you, and it changes if you uninstall and reinstall the game or clear
   its data.
+</p>
+<p>
+  On iPhone, Google Analytics also records Apple's identifier for vendors (IDFV): a random ID
+  that Apple gives to one developer's apps on one device. It is not the advertising
+  identifier, it is not linked to any account, and it is reset when all of this developer's
+  apps are removed from the device.
 </p>
 
 <h2>You are asked how much to share, before anything can be traced to you</h2>
@@ -287,7 +297,7 @@
   The game records that a purchase happened — which product, and so its price tier, and
   when — and, when a purchase does not go through, which product it was, the level, and the
   reason it did not (for example: cancelled, no connection, payment declined, or payment
-  still pending), as anonymous analytics events, so that pricing and pacing can be judged and failing purchases
+  still pending), as analytics events, so that pricing and pacing can be judged and failing purchases
   can be found. These records carry the same random DATA ID as everything else and contain
   no payment information, no order number, and no name.
 </p>
@@ -396,10 +406,10 @@
   is then deleted automatically.
 </p>
 <p>
-  A copy of the raw, anonymous event records is also exported to Google BigQuery, where
+  A copy of the raw event records is also exported to Google BigQuery, where
   it is <strong>kept only for as long as it is useful for improving the game</strong>,
   so that changes can be compared over time. These records contain only the gameplay
-  information described above and the random app instance identifier — no name, account,
+  information described above and the random identifiers described above — no name, account,
   contact details, or advertising identifier. Records are deleted on request, and in any
   case when they are no longer useful for improving the game. What Google's ad service
   collects for the rewarded videos is held by Google under its own retention rules, not in
@@ -412,7 +422,7 @@
   relating to you, and to object to its processing.
 </p>
 <p>
-  Anonymous data creates a practical problem for those rights: without something to match
+  Data tied only to random identifiers creates a practical problem for those rights: without something to match
   on, no one can tell which records are yours. The game therefore shows you a
   <strong>DATA ID</strong> — a random 12-character tag created on your device when you
   first play. Open <strong>Settings</strong> and it is printed on the line under the
@@ -441,8 +451,8 @@
 <h2>If you are in California</h2>
 <p>
   Under the California Consumer Privacy Act, the categories of personal information
-  collected are <strong>identifiers</strong> (the random app instance identifier and the
-  DATA ID), <strong>internet or other electronic network activity</strong> (the
+  collected are <strong>identifiers</strong> (the random app instance identifier, the
+  DATA ID and, on iPhone, Apple's identifier for vendors), <strong>internet or other electronic network activity</strong> (the
   gameplay events listed above), and <strong>commercial information</strong> (which
   in-app products were bought, without any payment detail). They are collected directly
   from the app on your device, for the business purpose of analysing and improving the
@@ -513,7 +523,8 @@
   Hordelane is not directed at children under 13. It is not listed in Google Play's
   Families programme or in the App Store's Kids category. The game does not knowingly
   collect information from children: on iPhone, where Apple's age-range feature reports a
-  player under 13, no statistics are sent for that player.
+  player under 13, the game stops sending statistics for that player as soon as that report
+  arrives, and data already sent is deleted on request with the DATA ID.
 </p>
 
 <h2>Changes to this policy</h2>
