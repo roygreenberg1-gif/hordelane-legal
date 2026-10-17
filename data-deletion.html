@@ -40,21 +40,31 @@
 <p class="sub">Hordelane: Zombie Survival — published by Roy Greenberg</p>
 
 <p>
-  The gameplay statistics Hordelane records do not identify you: there is no name, no email
-  address, no contact details and no advertising identifier. What it does record is pseudonymous
-  gameplay information — which stage was played, how it ended, how long it took — tagged with
-  a random <strong>DATA ID</strong> so that a deletion request can be matched to the right
-  records. Those records are what the request below deletes.
+  The gameplay statistics Hordelane records carry no name, no email address, no contact
+  details and no advertising identifier. They are pseudonymous: gameplay information —
+  which stage was played, how it ended, how long it took — tied to a random
+  <strong>DATA ID</strong> rather than to you, so that a deletion request can be matched to
+  the right records. Those records are what the request below deletes.
 </p>
 
 <p>
-  Backing your progress up to <strong>Google Play Games</strong> is a separate, optional
-  sign-in, and the only part of the game that involves an account at all. The game is fully
-  playable without it. That backup is not covered by the request below, because it is not
-  ours to delete — see <a href="#play-games">your Play Games backup</a>.
+  Your entries on the <strong>global Survival boards</strong>, and your <strong>invite
+  records</strong> from INVITE &amp; GET, are kept under a different random identifier, the
+  <strong>BOARD ID</strong>, and are removed with that one — see
+  <a href="#boards">your entries on the global boards</a> and
+  <a href="#invites">your invite records</a>. The two IDs are separate: the DATA ID does not
+  reach the boards or the invites, and the BOARD ID does not reach the statistics.
 </p>
 
-<h2>How to request deletion</h2>
+<p>
+  Backing your progress up to <strong>Google Play Games</strong> (Android) is a separate,
+  optional sign-in, and the only part of the game that uses an account of yours; the
+  boards and invites use an anonymous one the game creates by itself. The game is fully playable
+  without it. That backup is not covered by either request, because it is not ours to
+  delete — see <a href="#play-games">your Play Games backup</a>.
+</p>
+
+<h2>How to request deletion of your statistics</h2>
 <ol>
   <li>Open <strong>Hordelane</strong> on your device.</li>
   <li>Tap the <strong>AUDIO / settings</strong> button in the lobby.</li>
@@ -74,17 +84,22 @@
 <div class="note">
   <strong>On iPhone</strong> the steps are the same; the DATA ID is shown only while
   <strong>GAME DATA FULL</strong> is on, and switching to <strong>GAME DATA OFF</strong>
-  stops all sending at once. There is no Google Play Games backup on iPhone.
+  stops the statistics at once (the setting reads "no stats sent"). It does not reach the
+  global boards: from the iPhone version that adds them, a Survival result goes to them
+  under your BOARD ID whichever setting is on, and an earlier iPhone version sends nothing
+  to them. There is no
+  Google Play Games backup on iPhone.
 </div>
 <div class="note">
   <strong>Prefer to stop being identified instead of deleting?</strong> The same settings
   screen shows <strong>GAME DATA FULL</strong> or <strong>ANONYMOUS ONLY</strong>, with a
   <strong>CHANGE</strong> button under it (in earlier versions of the game, tap the mode
   itself). Tapping it to switch to anonymous only takes effect immediately: the game keeps
-  sending gameplay statistics, but with no DATA ID and no other identifier, so nothing
+  sending gameplay statistics, but with no DATA ID and no other identifier, so no statistic
   from then on can be linked to you. You can do both: switch, and still ask for what was
   already recorded under your DATA ID to be deleted. Copy the DATA ID before you switch;
-  the settings line stops showing it once you are anonymous.
+  the settings line stops showing it once you are anonymous. The switch covers the
+  statistics only, not the global boards.
 </div>
 
 <h2>What is deleted, and when</h2>
@@ -92,7 +107,9 @@
   <tr><th>Data</th><th>What happens</th></tr>
   <tr>
     <td>Gameplay event records tied to your DATA ID<br>
-        <span style="color:var(--muted)">stage numbers, results, duration, upgrades bought</span></td>
+        <span style="color:var(--muted)">stage numbers, results, duration, upgrades bought,
+        coins and diamonds earned and spent, videos watched, and the purchase records: which
+        product, when, whether it went through and why not</span></td>
     <td><strong>Deleted.</strong> Removed from the exported analytics tables within 30 days
         of the request. A request covering the same records is submitted to Google for its
         reporting console at the same time, and Google processes that on its own schedule —
@@ -105,12 +122,51 @@
   </tr>
   <tr>
     <td>Your game progress<br>
-        <span style="color:var(--muted)">coins, stages cleared, upgrades, survivors</span></td>
+        <span style="color:var(--muted)">coins, diamonds, stages cleared, upgrades, survivors,
+        offers bought, and the invite rewards you have been paid</span></td>
     <td><strong>Never sent to the developer.</strong> It is stored on your device, and — only
         if you signed in to Google Play Games — as a backup in your own Google account.
         Uninstalling the game, or clearing its storage in Android settings, removes the copy on
         the device. We hold no copy of either, so there is nothing here for us to delete; the
         backup is yours to remove, as described below.</td>
+  </tr>
+  <tr>
+    <td>Your entries on the global boards<br>
+        <span style="color:var(--muted)">waves cleared, time, name shown, platform, every
+        board and period</span></td>
+    <td><strong>Deleted</strong> automatically 30, 90 or 365 days after a daily, weekly or
+        monthly board closes, and on a request with your BOARD ID, together with the reports
+        you sent, the reports about you, and the anonymous account behind the BOARD ID —
+        see <a href="#boards">your entries on the global boards</a>. Not covered by the DATA
+        ID.</td>
+  </tr>
+  <tr>
+    <td>Your invite records<br>
+        <span style="color:var(--muted)">your code and when it was made, which code you joined
+        with, and your BOARD ID in the lists of other players' codes</span></td>
+    <td><strong>Deleted or anonymised</strong> on a request with your BOARD ID: the record of
+        the code you joined with is deleted, and your BOARD ID is replaced with the word
+        "deleted" wherever a code's record holds it — see
+        <a href="#invites">your invite records</a>. There is no automatic deletion date. Not
+        covered by the DATA ID.</td>
+  </tr>
+  <tr>
+    <td>Advertising data (Android rewarded videos)<br>
+        <span style="color:var(--muted)">advertising ID, IP address, video interactions,
+        diagnostics</span></td>
+    <td><strong>Not held by the developer.</strong> Google's ad service collects it for its
+        own use, under Google's privacy policy. Reset or delete the advertising ID, and switch
+        off ads personalisation, in Android's settings (Settings → Google → Ads on most
+        devices) and at <a href="https://adssettings.google.com">adssettings.google.com</a>.</td>
+  </tr>
+  <tr>
+    <td>Payment and order records<br>
+        <span style="color:var(--muted)">the payment, the order, the receipt</span></td>
+    <td><strong>Not held by the developer.</strong> Google Play (or Apple, on iPhone) keeps
+        them as the merchant, and on Android Unity's In-App Purchasing service receives a
+        record of each purchase step, as the <a href="privacy-policy.html">Privacy Policy</a>
+        describes. This request does not reach them; each handles its records under its own
+        privacy policy.</td>
   </tr>
   <tr>
     <td>Aggregate counts<br>
@@ -143,20 +199,133 @@
   deleted on request in any case.
 </p>
 
+<h2 id="boards">Your entries on the global boards</h2>
+<p>
+  When a Survival run that cleared at least one wave ends, the game enters its result on
+  the public HORDE and BOSS boards — the waves cleared, the time, the name shown, a platform
+  tag and the time it arrived — under your <strong>BOARD ID</strong>: the identifier of an
+  anonymous account the game creates for itself, with no email, password or name. Anyone
+  can see these entries. A player the store reports as under 13 sends nothing to the boards.
+</p>
+<p>
+  <strong>Deleted automatically.</strong> Entries on a daily board are deleted 30 days after
+  the day closes, on a weekly board 90 days after the week closes, and on a monthly board
+  365 days after the month closes; reports of names are deleted about 90 days after they are
+  made. The database does this by itself, usually within a day of the date. Entries on the
+  all-time boards, the anonymous account, and entries and reports made before 7 October
+  2026 are kept until deleted on request.
+</p>
+<p>
+  <strong>Deleted on request, sooner.</strong> To have everything removed now:
+</p>
+<ol>
+  <li>Open <strong>Hordelane</strong> and go to the <strong>Survival</strong> page.</li>
+  <li>Tap <strong>PERSONAL RECORDS</strong>. The line near the bottom reads
+      <strong>BOARD ID</strong>, followed by a long code of letters and digits. It cannot be
+      copied by tapping, so write it down exactly or take a screenshot. If there is no such
+      line, the game has never sent anything to the boards, or for invites, from this
+      installation of the game.</li>
+  <li>Email it to <a href="mailto:playrg.games@gmail.com">playrg.games@gmail.com</a> with
+      the subject <strong>Delete my board entries</strong>. One email can carry both your
+      DATA ID and your BOARD ID.</li>
+</ol>
+<p>
+  Because BOARD IDs and codes can be seen by others, the developer may ask you to confirm
+  the request from your phone, for example with a screenshot of PERSONAL RECORDS or
+  INVITE &amp; GET.
+</p>
+<p>
+  <strong>What is deleted:</strong> your entries on every HORDE and BOSS board — every day,
+  week and month since the boards began, and all time — the reports you sent about other
+  players' names, the reports other players sent about yours, your invite records (as
+  described <a href="#invites">below</a>), and the anonymous account itself. Requests are
+  handled by one person, so allow a few days for a reply; it is done
+  within <strong>30 days</strong> of the request, and you will get an email confirming it.
+</p>
+<p>
+  <strong>What is not:</strong> anything kept on devices rather than on the boards' server.
+  Other players' phones may still list your BOARD ID among the players they hid. Your own
+  saved game, and on Android your Play Games backup if you use one, may still hold, for each
+  HORDE daily, weekly or monthly board your result was entered on, a note of the board, the
+  BOARD ID and the score sent, until the game has checked that board for a prize after it
+  closes. None of that is shown to anyone. The name you chose with CHANGE NAME also stays in
+  your saved game and backup, and goes onto any new entries you make; change it with CHANGE
+  NAME if you want a different one. Google keeps its own records of requests to its servers
+  under its own rules.
+</p>
+<p>
+  The game keeps the BOARD ID on your device and does not restore it from a Play Games
+  backup, so note it before you uninstall. If you play Survival again after the deletion, the
+  game creates a new BOARD ID, and new entries go under that one.
+</p>
+
+<h2 id="invites">Your invite records</h2>
+<p>
+  <strong>INVITE &amp; GET</strong> in the lobby keeps a few records on the boards' server, all
+  under your <strong>BOARD ID</strong>: your six-letter code, with your BOARD ID as its owner
+  and the time it was made; the BOARD IDs of the players who joined with your code, and of
+  those who then won stage 10; and, if you entered a friend's code, which code you joined
+  with and when. Anyone who knows a code can read that code's record. No name, contact or
+  message is stored. A player the store reports as under 13 makes none of these records.
+</p>
+<p>
+  On Android, a player who installed the game from a friend's link has the friend's code
+  read from Google Play's install referrer on the phone. That text is not stored by the
+  developer: only the code found in it is sent, as the join above, and it is deleted with it.
+</p>
+<p>
+  <strong>Deleted on request.</strong> Email your BOARD ID to
+  <a href="mailto:playrg.games@gmail.com">playrg.games@gmail.com</a> with the subject
+  <strong>Delete my board entries</strong>, as for the boards; one request covers both. The
+  record of the code you joined with is deleted, and your BOARD ID is replaced with the word
+  "deleted" in every code's record that holds it: as the owner of your own code, and in the
+  lists of players who joined or won on other players' codes. The lists are not shortened,
+  because the game counts them to pay other players their rewards; your code, with no owner,
+  can no longer be joined. It is done within <strong>30 days</strong>, and you will get an
+  email confirming it.
+</p>
+<p>
+  <strong>No BOARD ID to send?</strong> The BOARD ID is shown in PERSONAL RECORDS on the
+  Survival page, which opens later in the campaign. Until you can open it, there is a manual
+  route for your invite records:
+</p>
+<ol>
+  <li>Open <strong>INVITE &amp; GET</strong> in the lobby. Your six-letter code is shown under
+      <strong>YOUR CODE</strong>, beside SHARE; if you have none yet, opening the page while
+      connected makes one.</li>
+  <li>Email that code to <a href="mailto:playrg.games@gmail.com">playrg.games@gmail.com</a>
+      with the subject <strong>Delete my board entries</strong>.</li>
+</ol>
+<p>
+  The developer reads from your code's record the BOARD ID it was made under and deletes
+  everything held under that BOARD ID, exactly as above. A code made before a reinstall
+  leads to the BOARD ID of that earlier installation.
+</p>
+<p>
+  <strong>What is not deleted:</strong> your own saved game keeps your code, how many friends
+  it has paid for, the code you joined with and the BOARD ID that recorded your join; on
+  Android your Play Games backup does too, if you use one. They are on your device and in
+  your own Google account, not on the server, and they are removed with the save. Invite
+  records have no automatic deletion date: without a request they are kept for as long as
+  invites run.
+</p>
+
 <h2 id="play-games">Your Play Games backup</h2>
 <p>
   If you signed in to Google Play Games, your saved progress — the stage you reached, your
-  coins, and which survivors and weapons you own — is kept in <strong>your own Google
-  account</strong>, not on any server belonging to the developer. The developer cannot read it
+  coins and diamonds, which survivors and weapons you own, and your invite code — is kept in
+  <strong>your own Google account</strong>, not on any server belonging to the developer. The developer cannot read it
   and cannot delete it for you, so emailing the DATA ID does not remove it.
 </p>
 <p>
   You remove it yourself, the same way you would for any other game: open the
   <strong>Play Games</strong> app, go to your profile, find Hordelane, and delete its saved
   game; or delete the game's data from your Google account settings. Signing in also lets the
-  game see the gamer name and avatar on your Play Games profile. That name is used only to
-  show whose backup is being restored, is never sent to the developer, and appears in none of
-  the analytics records described above — so there is nothing of it for us to delete.
+  game see the gamer name and avatar on your Play Games profile. The game shows that name in
+  Settings, so you can see which account your progress is backed up to, and offers it as a
+  suggestion when you open CHANGE NAME for the global boards. It leaves the device only if
+  you press SAVE there; it then becomes your name on the boards and is deleted with your
+  board entries, as described above. It appears in none of the analytics records.
 </p>
 
 <h2>Related</h2>
@@ -167,7 +336,7 @@
 </p>
 
 <footer>
-  Last updated: 9 October 2026 · Contact: playrg.games@gmail.com
+  Last updated: 17 October 2026 · Contact: playrg.games@gmail.com
 </footer>
 
 </main>
