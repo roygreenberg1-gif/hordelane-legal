@@ -33,10 +33,10 @@
 <body>
 
 <h1>Privacy Policy for Hordelane</h1>
-<p class="meta">Last updated: 17 October 2026</p>
+<p class="meta">Last updated: 19 October 2026</p>
 
 <p>
-  Hordelane: Zombie Survival ("Hordelane", "the game") is developed and published by Roy Greenberg. This policy
+  Hordelane: Zombie Survival ("Hordelane", "the game") is developed and published by Roy Greenberg (PlayRG), an independent developer in Israel. This policy
   explains what information the game collects, why, and how to switch it off. It applies
   to the Android application with the package name <code>com.greenberg.hordelane</code>,
   and to the iPhone application with the bundle identifier
@@ -403,8 +403,9 @@
   email, at most once an hour, and decides. A name the developer hides is put on a public
   list of hidden names (the name and when it was hidden - nothing about who wrote it or who
   reported it), and every copy of the game then shows it as a "Survivor #" name. A hidden
-  name stays on that list until the developer restores it. The emails, which name the
-  reported name, the board and the time, stay in the developer's mailbox.
+  name stays on that list until the developer restores it. The emails, which list each
+  reported name, how many times and on which boards it was reported, and when, stay in the
+  developer's mailbox.
 </p>
 <p>
   <strong>Prizes.</strong> The HORDE daily, weekly and monthly boards pay prizes in
@@ -772,9 +773,25 @@
   policy</a>.
 </p>
 <p>
+  Reports of names on the global boards reach the developer by email: a script running in
+  the developer's own Google account (<strong>Google Apps Script</strong>) reads the new
+  reports from Cloud Firestore and sends them to the developer's <strong>Gmail</strong>
+  inbox, listing each reported name, how many times and on which boards it was reported,
+  and when - nothing about the player who sent the report. Google processes them under the developer's Google account terms.
+</p>
+<p>
+  To study the gameplay statistics - for example, which stage players find too hard - the
+  developer uses AI tools, including <strong>Anthropic's Claude</strong>, which read
+  the exported records in BigQuery on the developer's instructions. These are the records
+  described above, identified only by random identifiers: no name, contact details or
+  advertising identifier. The game itself sends nothing to any AI service, and no decision
+  about you is made by one. Some of the game's pictures and sounds were made with AI
+  tools; making them used no player data.
+</p>
+<p>
   The gameplay statistics are <strong>not sold, rented, or shared</strong> with
-  advertisers, data brokers, or any other third party; they are used only to improve this
-  game. The only data that reaches an advertising company is what Google's own ad service
+  advertisers, data brokers, or anyone else; apart from the services named in this
+  section, which handle them for the developer, they are used only to improve this game. The only data that reaches an advertising company is what Google's own ad service
   collects when the game fetches and plays rewarded videos, described above. Board entries
   are shown to other players, which is what the boards are for, and are not sold either.
 </p>
@@ -796,15 +813,16 @@
 <h2>How long it is kept</h2>
 <p>
   In the Firebase Analytics reporting console, event data is retained for 14 months and
-  is then deleted automatically.
+  is then deleted automatically. Summary reports built from it - counts and totals such as how many
+  players finished a stage on a given day, with no identifier in them - are kept for as long
+  as the reporting console keeps them.
 </p>
 <p>
   A copy of the raw event records is also exported to Google BigQuery, where
-  it is <strong>kept only for as long as it is useful for improving the game</strong>,
-  so that changes can be compared over time. These records contain only the gameplay
+  it is kept so that changes can be compared over time, and <strong>deleted
+  automatically no later than 24 months after it was collected</strong>. These records contain only the gameplay
   information described above and the random identifiers described above — no name, account,
-  contact details, or advertising identifier. Records are deleted on request, and in any
-  case when they are no longer useful for improving the game. What Google's ad service
+  contact details, or advertising identifier. Records are deleted sooner on request. What Google's ad service
   collects for the rewarded videos is held by Google under its own retention rules, not in
   these records.
 </p>
@@ -914,6 +932,32 @@
   The game behaves identically whether or not you exercise any of these rights.
 </p>
 
+<h2>If you are in India</h2>
+<p>
+  Under India's Digital Personal Data Protection Act, 2023, you may ask for a summary of
+  the data relating to you and of the services, named under <em>Who processes the data</em>,
+  that handle it, have it corrected, completed or
+  erased, withdraw your consent (<strong>ANONYMOUS ONLY</strong> in Settings on Android, <strong>GAME
+  DATA OFF</strong> on iPhone, as described above; this does not reach the global boards), and nominate another person to use these rights if you die or become
+  unable to. Send the request, or any complaint about how your data is handled, to the
+  address under <em>Contact</em> with your DATA ID, your BOARD ID, or both; the developer
+  answers within 30 days. If you are not satisfied with the answer you may complain to the
+  Data Protection Board of India.
+</p>
+
+<h2>If you are in Israel</h2>
+<p>
+  The developer, Roy Greenberg, is the controller of the data under Israel's Protection of
+  Privacy Law, 5741-1981. You may ask to see the data relating to you, and to have it
+  corrected or deleted, by writing to the address under <em>Contact</em> with your DATA ID,
+  your BOARD ID, or both. You are under no legal obligation to give any data. On iPhone,
+  <strong>GAME DATA OFF</strong> sends no statistics; on Android, <strong>ANONYMOUS ONLY</strong>
+  sends them with no identifier, as described above. A Survival result goes to the public
+  boards either way. The data is used for the purposes this policy
+  describes, and is processed for the developer by the services named under <em>Who
+  processes the data</em>, some of them outside Israel.
+</p>
+
 <h2>If you are in the European Economic Area or the United Kingdom</h2>
 <p>
   The developer is the data controller. The legal basis for processing gameplay analytics
@@ -1021,10 +1065,20 @@
   In the same version, a player Google Play's age signals report as 13 to 17 is asked for
   non-personalised ads only, as <em>Rewarded videos</em> describes.
 </p>
+<p>
+  On 19 October 2026 the opening paragraph gained where the developer is; <em>Who
+  processes the data</em> gained the email script that delivers reports of names and the
+  AI tools used to study the statistics; the BigQuery copy of the statistics was given a
+  deletion no later than 24 months after collection instead of "as long as it is useful"; <em>How long it is
+  kept</em> now says that summary reports outlast the 14 months; sections for India and
+  Israel were added; and <em>Contact</em> now says where the developer is and that
+  complaints go to the same address. Nothing the game collects changed.
+</p>
 
 <h2>Contact</h2>
 <p>
-  Questions about this policy, and requests to delete data, can be sent to
+  Hordelane is made by Roy Greenberg (PlayRG), an independent developer in Israel.
+  Questions about this policy, requests to delete data, and complaints can be sent to
   <a href="mailto:playrg.games@gmail.com">playrg.games@gmail.com</a>.
   Please include your DATA ID, your BOARD ID, or both, with a deletion request.
 </p>
